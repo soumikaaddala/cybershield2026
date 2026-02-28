@@ -172,16 +172,42 @@
     @keyframes g2 { 0%,89%,100%{transform:none;opacity:0;} 91%{transform:translateX(4px);opacity:0.85;} 96%{transform:translateX(-4px);opacity:0.85;} }
 
     @media(max-width:768px){
-      nav{padding:14px 20px;}
-      .nav-links{display:none;}
-      .tracks-grid{grid-template-columns:1fr;}
-      .track-card.featured{grid-column:1;}
-      .date-wrap{flex-direction:column;align-items:center;}
-      .date-sep{display:none;}
-      footer{flex-direction:column;}
-      .stats-grid{grid-template-columns:1fr;}
-      .tl-item{flex-direction:column;gap:8px;}
-    }
+  nav{padding:14px 20px;}
+  .nav-links{display:none;}
+  .tracks-grid{grid-template-columns:1fr;}
+  .track-card.featured{grid-column:1;}
+  .date-wrap{flex-direction:column;align-items:center;}
+  .date-sep{display:none;}
+  footer{flex-direction:column;}
+  .stats-grid{grid-template-columns:1fr;}
+  .tl-item{flex-direction:column;gap:8px;}
+
+  /* SHRINK HERO */
+  .hero { padding: 80px 16px 40px; }
+  .hero-title { font-size: clamp(2.8rem, 13vw, 5rem); letter-spacing: -1px; }
+  .year-line { font-size: 0.35em; letter-spacing: 6px; }
+  .hero-sub { font-size: 0.78rem; letter-spacing: 3px; }
+
+  /* SHRINK IMAGES */
+  .hero-images { gap: 16px; margin-bottom: 20px; }
+  .hero-images img { height: 50px; }
+
+  /* SHRINK DATE CARDS */
+  .date-card { padding: 14px 28px; }
+  .day { font-size: 2.6rem; }
+  .month { font-size: 0.75rem; }
+
+  /* SHRINK SECTIONS */
+  section { padding: 50px 16px; }
+  .track-card { padding: 24px 20px; }
+  .section-title { font-size: 1.6rem; }
+
+  /* SHRINK STATS */
+  .stat-n { font-size: 2rem; }
+
+  /* TAGLINE */
+  .tagline { font-size: 0.65rem; letter-spacing: 2px; }
+}
   .hero-images {
   position: absolute;
   top: 70px;
