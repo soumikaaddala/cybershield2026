@@ -189,8 +189,19 @@
   .hero-sub { font-size: 0.78rem; letter-spacing: 3px; }
 
   /* SHRINK IMAGES */
-  .hero-images { gap: 16px; margin-bottom: 20px; }
-  .hero-images img { height: 50px; }
+  /* SHRINK IMAGES - 2x2 GRID ON MOBILE */
+  .hero-images {
+    position: relative;
+    top: auto;
+    right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    justify-items: center;
+    margin-bottom: 20px;
+  }
+  .hero-images img { height: 60px; }
+  .hero-images img:first-child { transform: scale(1); }
 
   /* SHRINK DATE CARDS */
   .date-card { padding: 14px 28px; }
