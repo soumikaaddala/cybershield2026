@@ -36,7 +36,7 @@
     .page { position: relative; z-index: 2; }
 
     /* NAV */
-    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 16px 48px; background: rgba(2,11,24,0.88); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 16px 16px; background: rgba(2,11,24,0.88); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); }
     .nav-logo { font-family: 'Orbitron', monospace; font-size: 1.1rem; font-weight: 900; color: var(--cyan); text-shadow: 0 0 18px var(--cyan); letter-spacing: 2px; }
     .nav-links { display: flex; gap: 32px; list-style: none; }
     .nav-links a { font-family: 'Share Tech Mono', monospace; font-size: 0.82rem; color: var(--dim); text-decoration: none; letter-spacing: 1px; text-transform: uppercase; transition: color 0.2s; }
@@ -73,7 +73,7 @@
     @keyframes scrollB { 0%,100% { transform: translateY(0); opacity:1; } 50% { transform: translateY(8px); opacity:0.3; } }
 
     /* SECTION BASE */
-    section { padding: 80px 24px; }
+    section { padding: 80px 16px; }
     .container { max-width: 1120px; margin: 0 auto; }
     .section-label { font-family: 'Share Tech Mono', monospace; font-size: 0.73rem; color: var(--green); letter-spacing: 4px; text-transform: uppercase; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
     .section-label::before { content: '//'; color: var(--dim); }
@@ -152,7 +152,7 @@
     .reg-btn:hover { background: #fff; box-shadow: 0 0 50px rgba(0,245,255,0.5); transform: scale(1.04); }
     .reg-btn:hover::after { transform: translateX(100%); }
 
-    footer { border-top: 1px solid var(--border); padding: 36px 48px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+    footer { border-top: 1px solid var(--border); padding: 36px 16px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
     .f-logo { font-family: 'Orbitron', monospace; font-size: 1rem; font-weight: 900; color: var(--cyan); letter-spacing: 2px; }
     .f-txt { font-family: 'Share Tech Mono', monospace; font-size: 0.73rem; color: var(--dim); letter-spacing: 1px; }
 
@@ -181,6 +181,11 @@
   footer{flex-direction:column;}
   .stats-grid{grid-template-columns:1fr;}
   .tl-item{flex-direction:column;gap:8px;}
+  .container { padding: 0 8px; }
+.track-card { padding: 20px 14px; }
+.prob { padding: 12px 10px; }
+.tl-wrap { padding-left: 8px; }
+.tl-item { padding-left: 44px; }
 
   /* SHRINK HERO */
   .hero { padding: 80px 16px 40px; }
